@@ -130,9 +130,9 @@
             </div>
 
             <div class="form-group">
-                  <label class="sr-only control-label col-lg-2" for="select_grado">Grado Funcionario</label>
+                  <label class="sr-only control-label col-lg-2" for="select_gradoCrear">Grado Funcionario</label>
                   <div class="col-lg-3">
-                    <select id="select_grado" class="form-control" name="select_grado">
+                    <select id="select_gradoCrear" class="form-control" name="select_gradoCrear">
                         <?php
                         require '../clases/Grado.php';
                         $Grados= new Grado();
@@ -188,16 +188,12 @@ $("#formularioCreacion").submit(function(){
              url:"./funcionesMantenedores.php?mant=1&func=1",
              data: $("#formularioCreacion").serialize(),
              success:function(resultado){
-
                if(resultado=="1"){
-                       swal("Operacion exitosa!", "Agregado Correctamente", "success");
+                       alert("AGREGADO CORRECTAMENTE");
                        cambiarPagina(1);
-               }else if(resultado=="2"){
-                       sweetAlert("Ocurrió un error", "Hay campos vacios", "error");
-               }else if(resultado=="3"){
-                       sweetAlert("Ocurrió un error", "El Run que intenta ingresar ya existe.", "error");
                }else{
-                     sweetAlert("Ocurrió un error", "No se pudo concretar la operacion", "error");
+                   alert(resultado);
+                   $("#mensaje").html(resultado);
                }
              }
          });

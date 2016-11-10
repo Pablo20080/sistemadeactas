@@ -80,9 +80,13 @@ class Usuario extends Conexion{
   }
 
   public function insertarModificarUsuario(){
-  echo "call insertarModificarUsuario($this->run,'$this->dv','$this->nombre','$this->apellido','$this->correo',$this->grado,$this->estado,'$this->clave',$this->tipo)";
-        //$this->ejecutarConsulta("call insertarModificarUsuario($this->run,'$this->dv','$this->nombre','$this->apellido','$this->correo',$this->grado,$this->estado,'$this->clave',$this->tipo)");
-
+$verificar;
+    $verificar= $this->insertar("call insertarModificarUsuario($this->run,'$this->dv','$this->nombre','$this->apellido','$this->correo',$this->grado,$this->estado,'$this->clave',$this->tipo)");
+    if($verificar){
+              echo "1";
+            }else{
+              echo "2";
+            }
   }
 
 

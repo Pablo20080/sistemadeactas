@@ -44,7 +44,7 @@ function cargarHeader(){
               </a>
 
               <ul class="dropdown-menu">
-                <li><a href="../mantenedores/mantenedorUsuarios.php">Usuarios</a></li>
+                <li><a href="../mantenedores/mantenedorUsuario.php">Usuarios</a></li>
               </ul>
             </li>
           </ul>

@@ -45,6 +45,21 @@
        //$filas= $resultado->fetch_array();
        //echo $filas;
     }
+    public function insertar($arg_consulta){
+      //echo $arg_consulta;
+
+          if ($this->varConexion->query($arg_consulta)) {
+                return true;
+          }else{
+              echo "Lo sentimos, este sitio web está experimentando problemas.";
+              echo "Error: La ejecución de la consulta falló debido a: \n";
+              echo "Query: " . $arg_consulta . "\n";
+              echo "Errno: " . $this->varConexion->errno . "\n";
+              echo "Error: " . $this->varConexion->error . "\n";
+              exit;
+          }
+
+    }
 
     public function consultaExistencia($arg_consulta){
       $resultado= $this->varConexion->query($arg_consulta);
