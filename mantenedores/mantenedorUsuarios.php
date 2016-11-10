@@ -21,7 +21,6 @@
 
                 </div>
             <div class="row">
-
                             <div class="col-xs-4">
                               <div class="input-group">
                                 <span class="input-group-addon "></span>
@@ -334,8 +333,8 @@
     $("#formularioCreacion").submit(function(){
         event.preventDefault();
 
-          var clave1= $("#txt_clave1Crear").val();
-          var clave2= $("#txt_clave2Crear").val();
+          var clave1=$("#txt_clave1Crear").val();
+          var clave2=$("#txt_clave2Crear").val();
 
           if(clave1==clave2){
               $.ajax({

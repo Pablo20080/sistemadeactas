@@ -40,10 +40,10 @@
     }
 
     public function ejecutarConsulta($arg_consulta){
-      //echo $arg_consulta;
-       $resultado= $this->varConexion->query($arg_consulta);
-       $filas= $resultado->fetch_array();
-       echo $filas;
+      echo $arg_consulta;
+      // $resultado= $this->varConexion->query($arg_consulta);
+       //$filas= $resultado->fetch_array();
+       //echo $filas;
     }
 
     public function consultaExistencia($arg_consulta){

@@ -60,7 +60,7 @@
             </div>
 
             <div class="form-group">
-                  <label class="sr-only control-label col-lg-2" for="select_grado">Tipo Usuario</label>
+                  <label class="sr-only control-label col-lg-2" for="select_grado">Grado Funcionario</label>
                   <div class="col-lg-3">
                     <select id="select_grado" class="form-control" name="select_grado" id="">
                         <?php

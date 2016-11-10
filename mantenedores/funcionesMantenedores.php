@@ -9,7 +9,7 @@ switch($_REQUEST['mant']){
               switch($_REQUEST['func']){
 
                   case "1":// Ingresar / Modificar Usuario
-
+                                
                                 $campoRut=$_REQUEST['txt_runCrear'];
                                 $posicionGuion= strpos($campoRut,"-");
                                 $rut= substr($campoRut,0,$posicionGuion);
